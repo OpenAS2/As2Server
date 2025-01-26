@@ -29,6 +29,3 @@ COPY --from=builder /usr/src/openas2/Runtime/config_template ${OPENAS2_HOME}/con
 RUN mkdir ${OPENAS2_BASE}/config
 WORKDIR $OPENAS2_HOME
 ENTRYPOINT ${OPENAS2_BASE}/bin/start-container.sh
-
-
-
